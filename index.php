@@ -152,7 +152,84 @@
             </svg>
         </div>
     </section>
-
+ <!-- Features Section - POS-301 -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Features</span>
+                <h2 class="section-title">Everything You Need to <span class="gradient-text">Succeed</span></h2>
+                <p class="section-subtitle">
+                    Powerful tools designed to streamline your business operations and boost your sales
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Feature 1: Inventory Management -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-boxes-stacked"></i>
+                    </div>
+                    <h3 class="feature-title">Inventory Management</h3>
+                    <p class="feature-description">
+                        Track stock levels in real-time, set low-stock alerts, and manage multiple locations effortlessly.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Real-time stock tracking</li>
+                        <li><i class="fas fa-check"></i> Automated reorder alerts</li>
+                        <li><i class="fas fa-check"></i> Multi-location support</li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 2: Sales Analytics -->
+                <div class="feature-card">
+                    <div class="feature-icon icon-green">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="feature-title">Sales Analytics</h3>
+                    <p class="feature-description">
+                        Get actionable insights with detailed reports and beautiful visualizations of your sales data.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Real-time dashboards</li>
+                        <li><i class="fas fa-check"></i> Custom report builder</li>
+                        <li><i class="fas fa-check"></i> Trend analysis</li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 3: Easy Integration -->
+                <div class="feature-card">
+                    <div class="feature-icon icon-orange">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3 class="feature-title">Easy Integration</h3>
+                    <p class="feature-description">
+                        Connect seamlessly with your favorite tools, payment gateways, and accounting software.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> 50+ integrations</li>
+                        <li><i class="fas fa-check"></i> Open API access</li>
+                        <li><i class="fas fa-check"></i> Webhook support</li>
+                    </ul>
+                </div>
+                
+                <!-- Feature 4: Secure Payments -->
+                <div class="feature-card">
+                    <div class="feature-icon icon-pink">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3 class="feature-title">Secure Payments</h3>
+                    <p class="feature-description">
+                        Accept all payment methods securely with PCI-compliant processing and fraud protection.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> PCI DSS compliant</li>
+                        <li><i class="fas fa-check"></i> Fraud detection</li>
+                        <li><i class="fas fa-check"></i> Multiple currencies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="js/script.js"></script>
 </body>
 </html>
