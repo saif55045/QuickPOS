@@ -1,1 +1,1 @@
-# QuickPSO1
+# QuickPOS
