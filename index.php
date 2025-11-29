@@ -408,6 +408,102 @@
         </div>
     </section>
 
+    <!-- Footer Section - POS-601 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <i class="fas fa-cash-register logo-icon"></i>
+                        <span class="logo-text">Quick<span class="logo-highlight">POS</span></span>
+                    </a>
+                    <p class="footer-description">
+                        The ultimate point-of-sale solution for modern businesses. Streamline operations and grow your revenue.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" aria-label="GitHub" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Product</h4>
+                        <ul class="footer-list">
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#" onclick="return false;">Integrations</a></li>
+                            <li><a href="#" onclick="return false;">API</a></li>
+                            <li><a href="#" onclick="return false;">Changelog</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" onclick="return false;">About Us</a></li>
+                            <li><a href="#" onclick="return false;">Careers</a></li>
+                            <li><a href="#" onclick="return false;">Blog</a></li>
+                            <li><a href="#" onclick="return false;">Press Kit</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Resources</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" onclick="return false;">Documentation</a></li>
+                            <li><a href="#" onclick="return false;">Help Center</a></li>
+                            <li><a href="#" onclick="return false;">Community</a></li>
+                            <li><a href="#" onclick="return false;">Tutorials</a></li>
+                            <li><a href="#" onclick="return false;">Support</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" onclick="return false;">Privacy Policy</a></li>
+                            <li><a href="#" onclick="return false;">Terms of Service</a></li>
+                            <li><a href="#" onclick="return false;">Cookie Policy</a></li>
+                            <li><a href="#" onclick="return false;">Licenses</a></li>
+                            <li><a href="#" onclick="return false;">Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2025 QuickPOS. All rights reserved. Made with <i class="fas fa-heart"></i> for modern businesses.
+                </p>
+                <div class="footer-badges">
+                    <span class="badge-item">
+                        <i class="fas fa-shield-check"></i>
+                        SSL Secured
+                    </span>
+                    <span class="badge-item">
+                        <i class="fas fa-lock"></i>
+                        PCI Compliant
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
