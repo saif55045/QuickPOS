@@ -1,0 +1,42 @@
+# Project Documentation (not for version control)
+jira_tasks.txt
+project_requirements.txt
+
+# IDE & Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
+error_log
+
+# Temporary Files
+*.tmp
+*.temp
+*.swp
+*~
+
+# PHP
+.phpunit.result.cache
+.php_cs.cache
+composer.lock
+vendor/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build
+node_modules/
+dist/
+build/
