@@ -110,5 +110,85 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+    
+    // ========================================
+    // CONTACT FORM VALIDATION - POS-501
+    // ========================================
+    const contactForm = document.getElementById('contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            // Clear previous errors
+            document.querySelectorAll('.error-message').forEach(msg => {
+                msg.style.display = 'none';
+                msg.textContent = '';
+            });
+            
+            let isValid = true;
+            
+            // Validate Name
+            const nameInput = document.getElementById('name');
+            const nameValue = nameInput.value.trim();
+            if (nameValue === '') {
+                showError('name-error', 'Name is required');
+                isValid = false;
+            } else if (nameValue.length < 2) {
+                showError('name-error', 'Name must be at least 2 characters');
+                isValid = false;
+            }
+            
+            // Validate Email
+            const emailInput = document.getElementById('email');
+            const emailValue = emailInput.value.trim();
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (emailValue === '') {
+                showError('email-error', 'Email is required');
+                isValid = false;
+            } else if (!emailPattern.test(emailValue)) {
+                showError('email-error', 'Please enter a valid email address');
+                isValid = false;
+            }
+            
+            // Validate Message
+            const messageInput = document.getElementById('message');
+            const messageValue = messageInput.value.trim();
+            if (messageValue === '') {
+                showError('message-error', 'Message is required');
+                isValid = false;
+            } else if (messageValue.length < 10) {
+                showError('message-error', 'Message must be at least 10 characters');
+                isValid = false;
+            }
+            
+            // Prevent form submission if validation fails
+            if (!isValid) {
+                e.preventDefault();
+            }
+        });
+        
+        // Helper function to show error messages
+        function showError(elementId, message) {
+            const errorElement = document.getElementById(elementId);
+            if (errorElement) {
+                errorElement.textContent = message;
+                errorElement.style.display = 'block';
+            }
+        }
+        
+        // Real-time validation on input
+        const formInputs = contactForm.querySelectorAll('.form-control');
+        formInputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                const errorId = this.id + '-error';
+                const errorElement = document.getElementById(errorId);
+                
+                if (errorElement && errorElement.style.display === 'block') {
+                    // Re-validate on blur if error was shown
+                    contactForm.dispatchEvent(new Event('submit'));
+                }
+            });
+        });
+    }
 });
+
 
