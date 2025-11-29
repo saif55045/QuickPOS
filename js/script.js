@@ -74,4 +74,41 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+    
+    // ========================================
+    // PRICING TOGGLE - POS-401
+    // ========================================
+    const pricingToggle = document.getElementById('pricing-toggle');
+    const toggleLabels = document.querySelectorAll('.toggle-label');
+    const priceAmounts = document.querySelectorAll('.price-amount');
+    
+    if (pricingToggle) {
+        pricingToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            
+            // Toggle active state on labels
+            toggleLabels.forEach(label => label.classList.toggle('active'));
+            
+            // Update prices
+            const isYearly = this.classList.contains('active');
+            priceAmounts.forEach(price => {
+                const monthly = price.dataset.monthly;
+                const yearly = price.dataset.yearly;
+                price.textContent = isYearly ? yearly : monthly;
+            });
+        });
+        
+        // Click on labels to toggle
+        toggleLabels.forEach(label => {
+            label.addEventListener('click', function() {
+                const period = this.dataset.period;
+                const isCurrentlyYearly = pricingToggle.classList.contains('active');
+                
+                if ((period === 'yearly' && !isCurrentlyYearly) || (period === 'monthly' && isCurrentlyYearly)) {
+                    pricingToggle.click();
+                }
+            });
+        });
+    }
 });
+

@@ -230,6 +230,108 @@
             </div>
         </div>
     </section>
+
+    <!-- Pricing Section - POS-401 -->
+    <section class="pricing" id="pricing">
+        <div class="pricing-bg">
+            <div class="pricing-gradient"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Pricing</span>
+                <h2 class="section-title">Simple, Transparent <span class="gradient-text">Pricing</span></h2>
+                <p class="section-subtitle">
+                    Choose the perfect plan for your business. No hidden fees, cancel anytime.
+                </p>
+            </div>
+            
+            <div class="pricing-toggle">
+                <span class="toggle-label active" data-period="monthly">Monthly</span>
+                <button class="toggle-switch" id="pricing-toggle" aria-label="Toggle pricing period">
+                    <span class="toggle-slider"></span>
+                </button>
+                <span class="toggle-label" data-period="yearly">
+                    Yearly
+                    <span class="toggle-badge">Save 20%</span>
+                </span>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Basic</h3>
+                        <p class="pricing-description">Perfect for small businesses just getting started</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-currency">$</span>
+                        <span class="price-amount" data-monthly="29" data-yearly="23">29</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 1 Store Location</li>
+                        <li><i class="fas fa-check"></i> Up to 500 Products</li>
+                        <li><i class="fas fa-check"></i> Basic Analytics</li>
+                        <li><i class="fas fa-check"></i> Email Support</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Advanced Reports</li>
+                        <li class="disabled"><i class="fas fa-times"></i> API Access</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary pricing-btn">Get Started</a>
+                </div>
+                
+                <!-- Pro Plan (Popular) -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Pro</h3>
+                        <p class="pricing-description">Best for growing businesses with multiple needs</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-currency">$</span>
+                        <span class="price-amount" data-monthly="79" data-yearly="63">79</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Up to 5 Store Locations</li>
+                        <li><i class="fas fa-check"></i> Unlimited Products</li>
+                        <li><i class="fas fa-check"></i> Advanced Analytics</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                        <li><i class="fas fa-check"></i> Custom Reports</li>
+                        <li class="disabled"><i class="fas fa-times"></i> API Access</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary pricing-btn">Get Started</a>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Enterprise</h3>
+                        <p class="pricing-description">For large organizations with custom requirements</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-currency">$</span>
+                        <span class="price-amount" data-monthly="199" data-yearly="159">199</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited Locations</li>
+                        <li><i class="fas fa-check"></i> Unlimited Products</li>
+                        <li><i class="fas fa-check"></i> Enterprise Analytics</li>
+                        <li><i class="fas fa-check"></i> 24/7 Dedicated Support</li>
+                        <li><i class="fas fa-check"></i> Custom Reports</li>
+                        <li><i class="fas fa-check"></i> Full API Access</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary pricing-btn">Contact Sales</a>
+                </div>
+            </div>
+            
+            <div class="pricing-guarantee">
+                <i class="fas fa-shield-check"></i>
+                <span>30-day money-back guarantee. No questions asked.</span>
+            </div>
+        </div>
+    </section>
+
     <script src="js/script.js"></script>
 </body>
 </html>
