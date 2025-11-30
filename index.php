@@ -450,7 +450,7 @@
                             <li><a href="#" onclick="return false;">Changelog</a></li>
                         </ul>
                     </div>
-                    
+                    <div></div>
                     <div class="footer-column">
                         <h4 class="footer-title">Company</h4>
                         <ul class="footer-list">
